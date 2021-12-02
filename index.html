@@ -1,7 +1,13 @@
 <script>
 
 ( function() {
-  document.querySelector('.notion-topbar').style.display = 'none';
+  consle.log(window.parent)
+  const el =  window.parent.querySelector('.notion-topbar')
+  
+  if (el) {
+    el.style.display = 'none';
+  }
+
   console.log('done')
   })();
 </script>
