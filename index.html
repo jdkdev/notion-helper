@@ -2,7 +2,7 @@
 
 ( function() {
   console.log(window.parent)
-  const el =  window.parent.querySelector('.notion-topbar')
+  const el =  window.parent.document.querySelector('.notion-topbar')
   
   if (el) {
     el.style.display = 'none';
